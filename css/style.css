@@ -1,0 +1,258 @@
+@import "bootstrap.min.css";
+@import "all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+
+
+
+/* Common CSS */
+
+.all-h4-h3 h4{
+    font-family: 'Kaushan Script', cursive;
+}
+.all-h4-h3 h3{
+    font-family: 'Montserrat', sans-serif;
+} 
+.services-icon{
+    color: #95e1d3;
+}
+
+
+
+
+/* Header-Section */
+
+header{
+    background-image: url(../images/image1.png);
+}
+.navbar .nav-link{
+    color: #fff;
+}
+.navbar .navbar-nav .nav-link{
+    padding-top: 10px; 
+}
+.navbar-expand-lg .navbar-nav .nav-link.active,
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #fce38a;
+    border-bottom: 2px solid#fce38a;
+}
+.margin{
+    margin: 0 18.5px;
+}
+.margin-top{
+    margin-top: 150px;
+}
+.creative{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+}
+.WTMOCO{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+}
+.WTMOCO1{
+    line-height: 34px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+}
+.header-btn:hover{
+    background-color: #fce38a;
+    color: black !important;
+}
+.progress .progress-bar{
+    background-color: #f38181;
+}
+
+
+/* Section-About-Us */
+
+#section-about-us p{
+    line-height: 5px;
+}
+
+#section-about-us figure{
+    position: relative;
+}
+#section-about-us figure figcaption{
+    background: linear-gradient(to bottom, #ec9286 0%, #f8d691 100%);
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 96%;
+    width: 97%;
+    display: none;
+}
+#section-about-us figure:hover figcaption{
+    display: block;
+}
+
+
+
+/* Client-Section */
+
+#client-section{
+    background-color: #95e1d3;
+}
+#client-section h5 p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Section-Services */
+
+#section-services h6{
+    font-family: 'Montserrat', sans-serif;
+}
+#section-services h6 a:hover{
+    color: #95e1d3 !important;
+}
+
+
+/* Design-Section */
+
+.design-img{
+    background-image: url("../images/designe-bb.png");
+}
+.design-tab-pic{
+    position: relative;
+}
+.design-mobile-pic {
+    position: absolute;
+    margin-left: -110px;
+    margin-top: 200px;
+}
+
+
+/* Service */
+
+.service .all-h4-h3 p{
+    line-height: 5px;
+}
+
+
+/* Carousel */
+
+.carousel{
+    background-color: #f8f8f8;  
+}
+.border-color{
+    border : 2px solid #95e1d3;
+}
+.carousel span{
+    font-family: 'Kaushan Script', cursive;
+}
+#carouselExampleControls .control-prev-icon{
+    margin-right: 100px;
+}
+#carouselExampleControls .control-next-icon{
+    margin-left: 100px;
+}
+
+/* Team */
+
+#section-team figure{
+    position: relative;
+}
+#section-team figure~p{
+    font-style: italic;
+    opacity: 0.5;
+}
+#section-team figure figcaption{
+    background: linear-gradient(to bottom, #ec9286 0%, #f8d691 100%);
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 97%;
+    width: 97%;
+    display: none;
+}
+#section-team figure:hover figcaption{
+    display: block;
+}
+#section-team figure figcaption a{
+    background-color: #f38181;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: #fce38a;
+    font-size: 50px;
+    margin-top: 55%;
+    text-decoration: none;
+}
+#section-team figure figcaption a:hover{
+    color: #fff;
+    font-size: 50px;
+    margin-top: 55%;
+    text-decoration: none;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+/* Media */
+
+@media (max-width: 991.98px) {
+
+    /* Header */
+
+    .navbar-toggler-icon{
+        color: white;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link.active,
+    .navbar-expand-lg .navbar-nav .nav-link:hover{
+        color: #fce38a;
+        border-bottom: none;
+    }
+    .navbar-expand-lg .navbar-nav .nav-item{
+        margin-left: 5px;
+    }
+
+    .WTMOCO,
+    .WTMOCO1{
+        font-size: 60px;
+    }
+
+    /* Section-About-Us */
+
+    #section-about-us p{
+        line-height: 1;
+    }
+
+    /* Client-Section */
+
+    #client-section .border-start,
+    #client-section .border-end{
+        border-left: none !important;
+        border-right: none !important;
+    }
+
+    /* Service-Section */
+
+    .services-icon{
+        padding-left: 24px;
+        padding-bottom: 10px;
+    }
+
+    /* Design-Section */
+    .design-mobile-pic {
+        margin-left: -330px;
+        margin-top: 110px;
+    }
+
+        
+    /* Service */
+
+    .service .all-h4-h3 p{
+        line-height: 20px;
+    }
+    
+}
